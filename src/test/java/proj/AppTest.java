@@ -9,6 +9,7 @@ import proj.service.Service;
 import proj.validation.NotaValidator;
 import proj.validation.StudentValidator;
 import proj.validation.TemaValidator;
+import proj.validation.ValidationException;
 
 import java.util.stream.StreamSupport;
 
@@ -54,5 +55,48 @@ public class AppTest
         long countAfterDelete = StreamSupport.stream(service.getAllStudenti().spliterator(), false).count();
         assertEquals(countBefore, countAfterDelete);
         assertTrue(true);
+    }
+
+    @Test
+    public void addStudentFailTest(){
+        StudentValidator studentValidator = new StudentValidator();
+        TemaValidator temaValidator = new TemaValidator();
+        String filenameStudent = "fisiere/Studenti.xml";
+        String filenameTema = "fisiere/Teme.xml";
+        String filenameNota = "fisiere/Note.xml";
+        StudentXMLRepo studentXMLRepository = new StudentXMLRepo(filenameStudent);
+        TemaXMLRepo temaXMLRepository = new TemaXMLRepo(filenameTema);
+        NotaValidator notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);
+        NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
+        Service service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
+
+        try{
+            service.addStudent(new Student(null, "Paul", 10, "a@a.a"));
+            assertTrue(false);
+        } catch (ValidationException vex){
+            assertTrue(true);
+        }
+
+        try{
+            service.addStudent(new Student("10", "", 10, "a@a.a"));
+            assertTrue(false);
+        } catch (ValidationException vex){
+            assertTrue(true);
+        }
+
+        try{
+            service.addStudent(new Student("10", "Paul", 0, "a@a.a"));
+            assertTrue(false);
+        } catch (ValidationException vex){
+            assertTrue(true);
+        }
+
+        try{
+            service.addStudent(new Student("10", "Paul", 10, ""));
+            assertTrue(false);
+        } catch (ValidationException vex){
+            assertTrue(true);
+        }
+
     }
 }
