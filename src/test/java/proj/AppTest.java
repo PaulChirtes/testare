@@ -109,5 +109,6 @@ public class AppTest
     @Test
     public void addAssignmentFail(){
         assertTrue(true);
+        assertEquals(1,1);
     }
 }
