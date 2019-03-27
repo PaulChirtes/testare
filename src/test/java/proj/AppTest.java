@@ -71,7 +71,7 @@ public class AppTest
         Service service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
 
         try{
-            service.addStudent(new Student(null, "Paul", 10, "a@a.a"));
+            service.addStudent(new Student("", "Paul", 10, "a@a.a"));
             assertTrue(false);
         } catch (ValidationException vex){
             assertTrue(true);
@@ -85,7 +85,7 @@ public class AppTest
         }
 
         try{
-            service.addStudent(new Student("10", "Paul", 0, "a@a.a"));
+            service.addStudent(new Student("10", "Paul", -1, "a@a.a"));
             assertTrue(false);
         } catch (ValidationException vex){
             assertTrue(true);
