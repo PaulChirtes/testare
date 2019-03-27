@@ -1,6 +1,5 @@
 package proj.repository;
-import validation.ValidationException;
-
+import proj.validation.ValidationException;
 /**
  * CRUD operations repository interface
  * @param <ID> - type E must have an attribute of type ID

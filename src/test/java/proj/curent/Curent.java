@@ -1,6 +1,6 @@
 package proj.curent;
 
-import validation.ValidationException;
+import proj.validation.ValidationException;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
