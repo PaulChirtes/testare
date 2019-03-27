@@ -99,4 +99,15 @@ public class AppTest
         }
 
     }
+
+
+    @Test
+    public void addAssignment(){
+        assertTrue(true);
+    }
+
+    @Test
+    public void addAssignmentFail(){
+        assertTrue(true);
+    }
 }
