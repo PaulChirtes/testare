@@ -2,6 +2,7 @@ package proj;
 
 import org.junit.Test;
 import proj.domain.Student;
+import proj.domain.Tema;
 import proj.repository.NotaXMLRepo;
 import proj.repository.StudentXMLRepo;
 import proj.repository.TemaXMLRepo;
@@ -103,12 +104,86 @@ public class AppTest
 
     @Test
     public void addAssignment(){
-        assertTrue(true);
+        StudentValidator studentValidator = new StudentValidator();
+        TemaValidator temaValidator = new TemaValidator();
+        String filenameStudent = "fisiere/Studenti.xml";
+        String filenameTema = "fisiere/Teme.xml";
+        String filenameNota = "fisiere/Note.xml";
+        StudentXMLRepo studentXMLRepository = new StudentXMLRepo(filenameStudent);
+        TemaXMLRepo temaXMLRepository = new TemaXMLRepo(filenameTema);
+        NotaValidator notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);
+        NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
+        Service service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
+
+
+        long countBefore = StreamSupport.stream(service.getAllTeme().spliterator(), false).count();
+        service.addTema(new Tema("100", "O tema", 3,5));
+        long countAfter = StreamSupport.stream(service.getAllTeme().spliterator(), false).count();
+        assertTrue(countBefore+1==countAfter);
+        Tema tema = service.findTema("100");
+        assertEquals(tema.getID(),"100");
+        assertEquals(tema.getDeadline(),3);
+        assertEquals(tema.getPrimire(),5);
+        assertEquals(tema.getDescriere(),"O tema");
+        assertNotNull(tema);
+        service.deleteTema("100");
+        long countAfterDelete = StreamSupport.stream(service.getAllTeme().spliterator(), false).count();
+        assertEquals(countBefore, countAfterDelete);
     }
 
     @Test
     public void addAssignmentFail(){
-        assertTrue(true);
-        assertEquals(1,1);
+        StudentValidator studentValidator = new StudentValidator();
+        TemaValidator temaValidator = new TemaValidator();
+        String filenameStudent = "fisiere/Studenti.xml";
+        String filenameTema = "fisiere/Teme.xml";
+        String filenameNota = "fisiere/Note.xml";
+        StudentXMLRepo studentXMLRepository = new StudentXMLRepo(filenameStudent);
+        TemaXMLRepo temaXMLRepository = new TemaXMLRepo(filenameTema);
+        NotaValidator notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);
+        NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
+        Service service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
+
+        try{
+            service.addTema(new Tema("", "O tema", 3,5));
+            assertTrue(false);
+        } catch (ValidationException vex){
+            assertTrue(true);
+        }
+
+        try{
+            service.addTema(new Tema("100", "", 3,5));
+            assertTrue(false);
+        } catch (ValidationException vex){
+            assertTrue(true);
+        }
+
+        try{
+            service.addTema(new Tema("100", "O tema", 0,5));
+            assertTrue(false);
+        } catch (ValidationException vex){
+            assertTrue(true);
+        }
+
+        try{
+            service.addTema(new Tema("100", "O tema", 15,5));
+            assertTrue(false);
+        } catch (ValidationException vex){
+            assertTrue(true);
+        }
+
+        try{
+            service.addTema(new Tema("100", "O tema", 2,0));
+            assertTrue(false);
+        } catch (ValidationException vex){
+            assertTrue(true);
+        }
+
+        try{
+            service.addTema(new Tema("100", "O tema", 1,15));
+            assertTrue(false);
+        } catch (ValidationException vex){
+            assertTrue(true);
+        }
     }
 }
