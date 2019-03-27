@@ -46,6 +46,10 @@ public class AppTest
         assertTrue(countBefore+1==countAfter);
         Student stud = service.findStudent("100");
         assertNotNull(stud);
+        assertEquals(stud.getNume(),"Paul");
+        assertEquals(stud.getEmail(), "a@a.a");
+        assertEquals(stud.getID(),"100");
+        assertEquals(stud.getGrupa(),10);
         service.deleteStudent("100");
         long countAfterDelete = StreamSupport.stream(service.getAllStudenti().spliterator(), false).count();
         assertEquals(countBefore, countAfterDelete);
