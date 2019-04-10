@@ -117,7 +117,8 @@ public class AppTest
 
 
         long countBefore = StreamSupport.stream(service.getAllTeme().spliterator(), false).count();
-        service.addTema(new Tema("100", "O tema", 3,5));
+        Tema addedOne = service.addTema(new Tema("100", "O tema", 3,5));
+        assertNotNull(addedOne);
         long countAfter = StreamSupport.stream(service.getAllTeme().spliterator(), false).count();
         assertTrue(countBefore+1==countAfter);
         Tema tema = service.findTema("100");
