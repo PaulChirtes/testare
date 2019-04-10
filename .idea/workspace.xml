@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e6c2cce3-7f78-41aa-b2c1-11f3f335c11a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/proj/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/proj/AppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/proj/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="193" column="24" selection-start-line="193" selection-start-column="24" selection-end-line="193" selection-end-column="24" />
+            <state relative-caret-position="407">
+              <caret line="193" column="31" selection-start-line="193" selection-start-column="16" selection-end-line="193" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#623#624#0" expanded="true" />
@@ -227,7 +226,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554891358229" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554891554093" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -353,7 +352,7 @@
       <workItem from="1553638009998" duration="1994000" />
       <workItem from="1553681310544" duration="5450000" />
       <workItem from="1553783668865" duration="50000" />
-      <workItem from="1554887701339" duration="3458000" />
+      <workItem from="1554887701339" duration="3727000" />
     </task>
     <task id="LOCAL-00001" summary="test if it works">
       <created>1553681346361</created>
@@ -467,13 +466,17 @@
       <option name="project" value="LOCAL" />
       <updated>1554889449067</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="lab 4">
+      <created>1554891381792</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1554891381792</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest - 2019.04.10 at 12h 25m 23s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppTest_addAssignment - 2019.04.10 at 12h 26m 09s.xml">
       <configuration name="AppTest.addAssignment" configurationId="JUnit" />
     </history-entry>
@@ -501,9 +504,12 @@
     <history-entry file="AppTest - 2019.04.10 at 12h 43m 58s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppTest - 2019.04.10 at 13h 16m 02s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13042000" />
+    <option name="totallyTimeSpent" value="13311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -567,7 +573,8 @@
     <MESSAGE value="lab3 in class 2" />
     <MESSAGE value="small changes" />
     <MESSAGE value="lab 3 bestan" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab 3 bestan" />
+    <MESSAGE value="lab 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -840,8 +847,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/proj/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="193" column="24" selection-start-line="193" selection-start-column="24" selection-end-line="193" selection-end-column="24" />
+        <state relative-caret-position="407">
+          <caret line="193" column="31" selection-start-line="193" selection-start-column="16" selection-end-line="193" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#623#624#0" expanded="true" />

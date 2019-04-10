@@ -196,4 +196,9 @@ public class AppTest
 
     }
 
+    @Test
+    public void bigBang(){
+        Service service = getService();
+    }
+
 }
