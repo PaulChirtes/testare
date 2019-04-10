@@ -3,11 +3,24 @@ package proj.domain;
 
 import proj.repository.HasID;
 
+import java.util.Objects;
+
 public class Tema implements HasID<String> {
     private String nrTema;
     private String descriere;
     private int deadline;
     private int primire;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Tema tema = (Tema) o;
+        return deadline == tema.deadline &&
+                primire == tema.primire &&
+                Objects.equals(nrTema, tema.nrTema) &&
+                Objects.equals(descriere, tema.descriere);
+    }
 
     /**
      *

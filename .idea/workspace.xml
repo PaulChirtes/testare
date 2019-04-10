@@ -5,8 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fisiere/Teme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fisiere/Teme.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/proj/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/proj/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/proj/repository/AbstractCrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/proj/repository/AbstractCrudRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/proj/repository/AbstractXMLRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/proj/repository/AbstractXMLRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/proj/domain/Tema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/proj/domain/Tema.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,6 +14,24 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/testare$AppTest.ic" NAME="AppTest Coverage Results" MODIFIED="1554888463932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>proj.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/testare$MainApplication.ic" NAME="MainApplication Coverage Results" MODIFIED="1554888499682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>proj.app.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/testare$AppTest_addAssignment.ic" NAME="AppTest.addAssignment Coverage Results" MODIFIED="1554888431623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>proj.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/testare$App.ic" NAME="App Coverage Results" MODIFIED="1554888479565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>proj.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myFlattenPackages" value="true" />
+    <option name="myElementSize" value="341" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -35,11 +52,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/proj/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="122" column="16" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="16" />
+            <state relative-caret-position="217">
+              <caret line="162" column="41" selection-start-line="162" selection-start-column="41" selection-end-line="162" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#addStudentFailTest#0;class#AppTest#0" />
+                <element signature="e#623#624#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/proj/domain/Tema.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,32 +78,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/proj/service/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="114" column="36" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
+            <state relative-caret-position="-188">
+              <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/proj/repository/AbstractXMLRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/proj/repository/AbstractCrudRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -94,7 +103,6 @@
         <option value="$PROJECT_DIR$/src/test/java/proj/repository/StudentFileRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/proj/domain/Nota.java" />
         <option value="$PROJECT_DIR$/src/test/java/proj/domain/Student.java" />
-        <option value="$PROJECT_DIR$/src/test/java/proj/domain/Tema.java" />
         <option value="$PROJECT_DIR$/src/test/java/proj/repository/StudentXMLRepo.java" />
         <option value="$PROJECT_DIR$/src/test/java/proj/repository/TemaFileRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/proj/repository/TemaXMLRepo.java" />
@@ -109,9 +117,10 @@
         <option value="$PROJECT_DIR$/src/test/java/proj/repository/CrudRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/proj/repository/AbstractFileRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/proj/curent/Curent.java" />
-        <option value="$PROJECT_DIR$/src/test/java/proj/AppTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/proj/repository/AbstractCrudRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/proj/repository/AbstractXMLRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/proj/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/proj/domain/Tema.java" />
       </list>
     </option>
   </component>
@@ -147,6 +156,33 @@
               <item name="testare" type="b2602c69:ProjectViewProjectNode" />
               <item name="testare" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testare" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testare" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testare" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="proj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testare" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -171,16 +207,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="proj" type="462c0819:PsiDirectoryNode" />
-              <item name="validation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testare" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testare" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="proj" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -191,10 +218,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554888010244" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554889164048" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RecentsManager">
@@ -215,7 +246,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.addAssignment">
+  <component name="RunManager" selected="JUnit.AppTest.addAssignment2">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="proj.App" />
+      <module name="proj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="proj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="proj.app.MainApplication" />
+      <module name="proj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="proj.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj" />
       <extension name="coverage">
@@ -247,7 +304,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.addAssignmentFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.addAssignment2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj" />
       <extension name="coverage">
         <pattern>
@@ -257,23 +314,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="proj" />
       <option name="MAIN_CLASS_NAME" value="proj.AppTest" />
-      <option name="METHOD_NAME" value="addAssignmentFail" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest.shouldAnswerWithTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="proj.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="proj" />
-      <option name="MAIN_CLASS_NAME" value="proj.AppTest" />
-      <option name="METHOD_NAME" value="shouldAnswerWithTrue" />
+      <option name="METHOD_NAME" value="addAssignment2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -281,10 +322,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppTest.addAssignment" />
+        <item itemvalue="JUnit.AppTest.addAssignment2" />
         <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.AppTest.addAssignmentFail" />
-        <item itemvalue="JUnit.AppTest.shouldAnswerWithTrue" />
+        <item itemvalue="Application.MainApplication" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.AppTest.addAssignment" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +344,7 @@
       <workItem from="1553638009998" duration="1994000" />
       <workItem from="1553681310544" duration="5450000" />
       <workItem from="1553783668865" duration="50000" />
-      <workItem from="1554887701339" duration="269000" />
+      <workItem from="1554887701339" duration="1436000" />
     </task>
     <task id="LOCAL-00001" summary="test if it works">
       <created>1553681346361</created>
@@ -395,43 +437,50 @@
       <option name="project" value="LOCAL" />
       <updated>1553687054151</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="lab 3 bestan">
+      <created>1554888030111</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1554888030111</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest - 2019.03.27 at 13h 34m 19s.xml">
+    <history-entry file="AppTest_addAssignment - 2019.04.10 at 12h 20m 02s.xml">
+      <configuration name="AppTest.addAssignment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_addAssignment - 2019.04.10 at 12h 20m 13s.xml">
+      <configuration name="AppTest.addAssignment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_addAssignment - 2019.04.10 at 12h 24m 48s.xml">
+      <configuration name="AppTest.addAssignment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.04.10 at 12h 25m 05s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_addAssignment - 2019.03.27 at 13h 41m 15s.xml">
-      <configuration name="AppTest.addAssignment" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_addAssignment - 2019.03.27 at 13h 41m 56s.xml">
-      <configuration name="AppTest.addAssignment" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_addAssignment - 2019.03.27 at 13h 42m 11s.xml">
-      <configuration name="AppTest.addAssignment" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_addAssignmentFail - 2019.03.27 at 13h 43m 59s.xml">
-      <configuration name="AppTest.addAssignmentFail" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.03.27 at 13h 46m 17s.xml">
+    <history-entry file="AppTest - 2019.04.10 at 12h 25m 23s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest - 2019.04.10 at 12h 16m 03s.xml">
+    <history-entry file="AppTest_addAssignment - 2019.04.10 at 12h 26m 09s.xml">
+      <configuration name="AppTest.addAssignment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_addAssignment - 2019.04.10 at 12h 27m 15s.xml">
+      <configuration name="AppTest.addAssignment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.04.10 at 12h 27m 46s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_addAssignment - 2019.04.10 at 12h 16m 25s.xml">
-      <configuration name="AppTest.addAssignment" configurationId="JUnit" />
+    <history-entry file="AppTest - 2019.04.10 at 12h 34m 00s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_addAssignment - 2019.04.10 at 12h 17m 51s.xml">
-      <configuration name="AppTest.addAssignment" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_addAssignment - 2019.04.10 at 12h 18m 16s.xml">
-      <configuration name="AppTest.addAssignment" configurationId="JUnit" />
+    <history-entry file="AppTest_addAssignment2 - 2019.04.10 at 12h 38m 08s.xml">
+      <configuration name="AppTest.addAssignment2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9853000" />
+    <option name="totallyTimeSpent" value="11020000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -446,7 +495,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13219616" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13219616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -455,7 +504,7 @@
       <window_info id="Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3261105" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3261105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -466,6 +515,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3261105" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.33260393" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.6772429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -501,7 +551,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/proj/AppTest.java</url>
-          <line>105</line>
+          <line>87</line>
           <properties class="proj.AppTest" method="addAssignment">
             <option name="EMULATED" value="true" />
           </properties>
@@ -515,16 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/MainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="35" column="146" selection-start-line="20" selection-start-column="8" selection-end-line="35" selection-end-column="146" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -585,13 +625,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/proj/fisiere/a.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/proj/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/proj/repository/NotaXMLRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -613,16 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/proj/app/MainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,13 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/proj/domain/Tema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -735,30 +751,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/proj/service/Service.java">
+    <entry file="file://$PROJECT_DIR$/src/app/MainApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="114" column="36" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
+        <state relative-caret-position="113">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/proj/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="122" column="16" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addStudentFailTest#0;class#AppTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/proj/repository/AbstractCrudRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="1104">
           <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
         </state>
       </provider>
@@ -773,12 +778,133 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/proj/app/MainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/proj/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/proj/service/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-188">
+          <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/proj/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="162" column="41" selection-start-line="162" selection-start-column="41" selection-end-line="162" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/proj/domain/Tema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>proj</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
