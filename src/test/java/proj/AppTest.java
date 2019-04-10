@@ -1,6 +1,7 @@
 package proj;
 
 import org.junit.Test;
+import proj.domain.Nota;
 import proj.domain.Student;
 import proj.domain.Tema;
 import proj.repository.NotaXMLRepo;
@@ -12,6 +13,8 @@ import proj.validation.StudentValidator;
 import proj.validation.TemaValidator;
 import proj.validation.ValidationException;
 
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.stream.StreamSupport;
 
 import static org.junit.Assert.*;
@@ -21,15 +24,6 @@ import static org.junit.Assert.*;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
-
     @Test
     public void addStudentTest(){
         Service service = getService();
@@ -180,25 +174,32 @@ public class AppTest
 
     @Test
     public void addStudentBigBang(){
-        Service service = getService();
-
+        addStudentTest();
     }
 
     @Test
     public void addAssignmentBigBang(){
-        Service service = getService();
-
+        addAssignment();
     }
 
     @Test
     public void addGradeBigBang(){
         Service service = getService();
-
+        Tema tema = service.addTema(new Tema("101", "O tema", 1,14));
+        Student student  = service.addStudent(new Student("101", "Paul", 10, "a@a.a"));
+        String idNota = student.getID() + "#" + tema.getID();
+        double notaFinala = service.addNota(new Nota(idNota,student.getID(),tema.getID(),10, LocalDate.of(2019,4,10)),"bine");
+        assertEquals(10,notaFinala,0);
+        service.deleteNota(idNota);
+        service.deleteTema("101");
+        service.deleteStudent("101");
     }
 
     @Test
     public void bigBang(){
-        Service service = getService();
+        addStudentBigBang();
+        addAssignmentBigBang();
+        addGradeBigBang();
     }
 
 }
