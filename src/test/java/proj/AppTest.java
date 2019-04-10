@@ -177,4 +177,23 @@ public class AppTest
         NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
         return new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
     }
+
+    @Test
+    public void addStudentBigBang(){
+        Service service = getService();
+
+    }
+
+    @Test
+    public void addAssignmentBigBang(){
+        Service service = getService();
+
+    }
+
+    @Test
+    public void addGradeBigBang(){
+        Service service = getService();
+
+    }
+
 }
