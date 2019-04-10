@@ -160,7 +160,9 @@ public class AppTest
         long countBefore = StreamSupport.stream(service.getAllTeme().spliterator(), false).count();
         Tema addedOne = service.addTema(new Tema("100", "O tema", 3,5));
         Tema addedAgain = service.addTema(new Tema("100", "O tema", 3,5));
+
         assertEquals(addedOne, addedAgain);
+        service.deleteTema("100");
     }
 
     private Service getService() {
