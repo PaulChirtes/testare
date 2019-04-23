@@ -204,17 +204,27 @@ public class AppTest
 
     @Test
     public void addStudentTopDown(){
-
+        addStudentTest();
     }
 
     @Test
     public void addAssignmentTopDown(){
         addStudentTopDown();
+        addAssignment();
     }
 
     @Test
     public void addGradeTopDown(){
         addAssignmentTopDown();
+        Service service = getService();
+        Tema tema = service.addTema(new Tema("101", "O tema", 1,14));
+        Student student  = service.addStudent(new Student("101", "Paul", 10, "a@a.a"));
+        String idNota = student.getID() + "#" + tema.getID();
+        double notaFinala = service.addNota(new Nota(idNota,student.getID(),tema.getID(),10, LocalDate.of(2019,4,10)),"bine");
+        assertEquals(10,notaFinala,0);
+        service.deleteNota(idNota);
+        service.deleteTema("101");
+        service.deleteStudent("101");
     }
 
 }
