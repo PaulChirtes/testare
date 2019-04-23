@@ -202,4 +202,19 @@ public class AppTest
         addGradeBigBang();
     }
 
+    @Test
+    public void addStudentTopDown(){
+
+    }
+
+    @Test
+    public void addAssignmentTopDown(){
+        addStudentTopDown();
+    }
+
+    @Test
+    public void addGradeTopDown(){
+        addAssignmentTopDown();
+    }
+
 }
